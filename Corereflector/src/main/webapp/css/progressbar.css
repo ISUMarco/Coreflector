@@ -1,0 +1,58 @@
+.progressbar {
+  display: flex;
+  align-items: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+
+.step-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #EFEFEF;
+  margin-bottom: 5px;
+}
+
+.active .step-circle {
+  background-color: #00C853;
+}
+
+.checkmark {
+  width: 30px;
+  height: 30px;
+  background-image: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-checkmark-512.png');
+  background-size: cover;
+}
+
+.step a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.line {
+  flex: 1;
+  height: 4px;
+  background-color: #EFEFEF;
+  margin: 0 5px;
+}
+
+.active ~ .line {
+  background-color: #EFEFEF;
+}
+
+.step:hover .step-circle {
+  background-color: #EFEFEF;
+}
+
+.step:hover ~ .line {
+  background-color: #EFEFEF;
+}
